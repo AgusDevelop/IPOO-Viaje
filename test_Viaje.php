@@ -5,7 +5,7 @@ $totales=[];
     //FUNCIONES
 
     /**
-    * Define la cantidad maxima de pasajeros del viaje
+    * Define la cantidad maxima de pasajeros del viaje segun servicio.
     * @param string $servicio
     * @return int
     */

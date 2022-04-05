@@ -75,7 +75,7 @@ function sumarPasajero($pasajeroAgregado){
  $this -> setTotalPasajeros($coleccion);
 }
 
-
+//Convierte el objeto en una String.
 public function __toString(){
     return "Código de viaje: " . $this->getcodigo() . "\n" . 
             "Destino de viaje: " . $this->getdestino() . "\n" . 
@@ -87,26 +87,6 @@ public function __toString(){
 
 
 
-
-
-
-/**
-     * Esta función permite, a través del ingreso de dos parámetros, modificar los datos de
-     * un pasajero.
-     * @param array $persona
-     * @param array $personaModificada
-     */
-    public function pasajeroModificar($persona, $personaModificada){
-        $arregloDePasajeros = $this->gettotalPasajeros();
-        $i = 0;
-        while ($i < count($arregloDePasajeros) && ($arregloDePasajeros[$i] != $persona)){
-            $i = $i + 1;
-        }
-        if ($arregloDePasajeros[$i] == $persona){
-            $arregloDePasajeros[$i] = $personaModificada;
-        }
-        $this->setTotalPasajeros($arregloDePasajeros);
-    }
 
 
 
